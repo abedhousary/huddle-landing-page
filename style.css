@@ -1,0 +1,103 @@
+:root {
+    --Violet: hsl(257, 40%, 49%) ;
+    --SoftMagenta: hsl(300, 69%, 71%);
+    --font-pop:'Poppins', sans-serif;
+    --font-open:'Open Sans',sans-serif;
+}
+body {
+    background-image: url(./images/bg-desktop.svg);
+    background-color: var(--Violet);
+    display: flex;
+
+}
+.container {
+    width: 75%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+.container .logo {
+    background-image: url(./images/logo.svg);
+    width: 400px;
+    height: 100px;
+    background-repeat: no-repeat;
+    margin:20px 0px 0px 40px;
+}
+.container .illustration {
+    width: 800px;
+    height: 575px;
+    margin: 11px 0px 0px 41px;
+}
+.right-container {
+    width: 50%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    position: relative;
+}
+.right-container .title {
+    color: white;
+    font-family: var(--font-pop);
+    font-weight: 600;
+    font-size: 40px;
+    width: 450px;
+
+}
+.right-container .desc {
+    color: white;
+    font-family: var(--font-open);
+    font-weight: 400;
+    width: 456px;
+    margin-top: 20px;
+    line-height: 31px;
+}
+.right-container .Register {
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    color: var(--Violet);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-family: var(--font-pop);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.37);
+    cursor: pointer;
+    transition: 0.4s;
+}
+.Register:hover {
+    background-color: var(--SoftMagenta);
+    color:white;
+}
+
+.socials {
+    width: 400px;
+    height: 50px;
+    position: absolute;
+    bottom: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 10px;
+}
+.socials .social-holder {
+    width: 40px;
+    height: 40px;
+    color: white;
+    border:1px solid white;
+    border-radius: 50%;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.social-holder:hover {
+    border-color: var(--SoftMagenta);
+    color: var(--SoftMagenta);
+    
+}
